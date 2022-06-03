@@ -33,4 +33,4 @@ services:
       - traefik.http.routers.l2gethhealth.entrypoints=websecure
       - traefik.http.routers.l2gethhealth.rule=Host(`${L2GETH_HEALTH_HOST}.${DOMAIN}`)
       - traefik.http.routers.l2gethhealth.tls.certresolver=letsencrypt
-      - traefik.http.services.l2gethhealth.loadbalancer.server.port=3000
+      - traefik.http.services.l2gethhealth.loadbalancer.server.port=7300
