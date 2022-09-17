@@ -20,7 +20,7 @@ services:
   l2geth-replica:
     image: ethereumoptimism/l2geth:${L2GETH_IMAGE_TAG:-latest}
     restart: ${RESTART}
-    stop_grace_period: 3m
+    stop_grace_period: 5m
     entrypoint:
       - /bin/sh
       - -c
